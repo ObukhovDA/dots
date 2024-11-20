@@ -1,0 +1,63 @@
+#yay
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+yay --version
+
+#wallpaper
+yay -S swww #wallpaper
+
+#simple text edit
+yay -S micro
+
+#vscode
+yay -S visual-studio-code-bin
+Перейдите в меню настроек, нажав на значок шестеренки в нижнем левом углу и выбрав Settings, или используйте клавишу Ctrl+,.
+
+В строке поиска в настройках введите font и найдите параметр Editor: Font Family.
+
+В поле Editor: Font Family добавьте Terminus в список шрифтов:
+
+plaintext
+Copy code
+"editor.fontFamily": "'Terminus', 'monospace', monospace"
+Убедитесь, что шрифт Terminus стоит первым в списке, чтобы его использовал редактор.
+
+Закройте и откройте редактор для применения изменений.
+
+
+#fish
+sudo pacman -S fish
+sudo sh -c "echo /usr/bin/fish >> /etc/shells"
+chsh -s /usr/bin/fish
+
+#font 
+yay -S ttf-terminus-nerd
+
+#waybar
+sudo pacman -S waybar swaybg
+sudo pacman -S waybar-modules
+
+#obsidian
+yay -S obsidian
+
+#pdfview
+sudo pacman -S zathura
+sudo pacman -S zathura-pdf-poppler
+
+#firefox
+sudo pacman -S firefox
+
+#vim
+sudo pacman -S vim
+
+#py
+sudo pacman -S python python-pip
+
+#go
+sudo pacman -S go
+go version
+
+
+
+https://gruvbox-wallpapers.pages.dev/
