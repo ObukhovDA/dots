@@ -1,0 +1,84 @@
+* {
+  border: none;
+  font-family: "Terminus (TTF)", Noto Sans CJK;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  min-height: 0;
+}
+
+window#waybar {
+  background: black;
+  color: #ebdbb2;
+}
+
+#workspaces {
+  background-color: black;
+  font-weight: bold;
+  padding: 0;
+}
+
+#workspaces button {
+  background-color: black;
+  color: #ebdbb2;
+  padding: 5px 10px;
+  margin: 0 2px;
+  border: 1px solid transparent;
+  font-weight: bold;
+}
+
+#workspaces button.active {
+  color: black;
+  background-color: #ebdbb2;
+  border-radius: 4px;
+}
+
+#workspaces button:hover {
+  color: black;
+  background-color: #b8bb26;
+  border-radius: 4px;
+}
+
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#custom-playerctl {
+  background-color: black;
+  padding: 0px 10px;
+}
+
+#clock {
+  color: #b8bb26;
+  font-weight: bold;
+}
+
+#battery {
+  color: #9ece6a;
+}
+
+#battery.charging {
+  color: #9ece6a;
+}
+
+#battery.warning:not(.charging) {
+  background-color: #f7768e;
+  color: #24283b;
+}
+
+#network {
+  color: #fb4934;
+}
+
+#pulseaudio {
+  color: #fabd2d;
+}
+
+#pulseaudio.muted {
+  background-color: black;
+  color: #928374;
+}
+
+#custom-playerctl {
+  font-style: italic;
+}
